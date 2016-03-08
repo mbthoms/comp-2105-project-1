@@ -1,9 +1,13 @@
 /*Setting the Global Syles for the page.*/
+
 body {
   background-color: lightgrey;
   font-family: 'Roboto';
 }
+
+
 /*Setting the styles on the switch when not triggered.*/
+
 .lbl {
   position: relative;
   display: block;
@@ -14,7 +18,10 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
+
 /*Setting the styles of the switch when it is triggered. and Moving the dot.*/
+
 .lbl:after {
   position: absolute;
   left: -2px;
@@ -24,41 +31,64 @@ body {
   height: 26px;
   border-radius: 100px;
   background: #fff;
-  box-shadow: 0px 3px 3px rgba(0,0,0,0.05);
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.05);
   content: '';
   transition: all 0.3s ease;
 }
+
+
 /*Sqeezing the dot as it moves. Making it move like a ball instead of an a dot on your screen */
-.lbl:active:after { transform: scale(1.15, 0.85); }
+
+.lbl:active:after {
+  transform: scale(1.15, 0.85);
+}
+
+
 /*Turning the container for the dot a new colour*/
-.cbx:checked ~ label { background: lightgreen; }
+
+.cbx:checked ~ label {
+  background: lightgreen;
+}
+
+
 /*Turning the dot a new colour*/
+
 .cbx:checked ~ label:after {
   left: 20px;
   background: green;
 }
+
+
 /*Centering the main element on the page.*/
+
 .container {
   position: absolute;
   top: 250px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+
 /*Centering the switch under the title.*/
+
 section:nth-child(1) {
   display: block;
   margin-left: auto;
   margin-right: auto;
-
 }
 
-.greenBackground{
-    background-color: #173618;
-    color: white;
-    transition: all 0.3s ease;
+.greenBackground {
+  background-color: #173618;
+  color: white;
+  transition: all 0.3s ease;
 }
+
+
 /*Hiding the checkbox.*/
-.hidden { display: none; }
+
+.hidden {
+  display: none;
+}
 
 .center {
   position: absolute;
